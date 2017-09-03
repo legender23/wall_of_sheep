@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wall Of Sheep</title>
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <script src="static/jquery.min.js"></script>
+    <script src="static/bootstrap.min.js"></script>
+    
+    <style>
+        body {
+            background: url(back2.png);
+            background-size: 100%
+        }
+        div#main {
+            position: absolute;
+            top: 10%;
+            bottom: 10%;
+            left: 4%;
+            right: 4%;
+            height: 80%;
+            width: 92%;
+            background-color: #626262;
+            background-color: rgba(98,98,98,0.45);
+        }
+        thead {
+            background-color:rgba(255, 255, 255, 0.15);
+        }
+        tr {
+            font-size: 20px;
+            color: #F0F0F0;
+        }
+        td.font-lower {
+            font-size: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="col-lg-3 col-md-3">
+                <table class="table table-bordered">
+                    <caption> <br></caption>
+                    <thead>
+                        <tr>
+                            <th>BSSID</th>
+                            <th>WIFI</th>
+                        </tr>
+                    </thead>
+                    <tbody id="probe">
+                    </tbody>
+                </table>
+        </div>
+        <div class="col-lg-9 col-md-9">
+            <table class="table table-bordered">
+                <caption> <br></caption>
+                <thead>
+                    <tr>
+                        <th>源MAC</th>
+                        <th>源IP</th>
+                        <th>目标IP</th>
+                        <th>网站域名</th>
+                        <th>身份认证信息</th>
+                        <th>指纹信息</th>
+                    </tr>
+                </thead>
+                <tbody id="list">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="static/wall.js"></script>
+</html>
