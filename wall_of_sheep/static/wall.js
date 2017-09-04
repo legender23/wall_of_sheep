@@ -1,6 +1,6 @@
 const max_num = 14;
 
-let socket = new WebSocket("ws://localhost:9501");
+let socket = new WebSocket("ws://123.207.63.246:9501");
 socket.onmessage = function(event) {
 	console.log(event.data);
 	let data = JSON.parse(event.data);
